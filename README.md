@@ -11,7 +11,7 @@
 3. Thymeleaf
    - 서버 템플릿 엔진.
    - build.gradle에 implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'로 라이브러리 추가하여 사용.
-   - 사용할 html 파일에 <html xmlns:th="http://www.thymeleaf.org">로 태그 수정.
+   - 사용할 html 파일에 <!-- <html xmlns:th="http://www.thymeleaf.org"> -->로 태그 수정.
     
 4. H2
    - JAVA로 작성된 오픈소스 RDBMS
