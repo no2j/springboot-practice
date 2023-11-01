@@ -23,4 +23,4 @@
 5. JPA (Java Persistence API))
    - 자바의 ORM(Object-Relational Mapping) 기술의 표준
    - 생산성, 유지보수 등 이점이 있다.
-   - + Spring Data JPA
+   - Spring Data JPA
