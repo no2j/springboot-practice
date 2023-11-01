@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"> 
+<body>
+	<div class="container">
+		<div>
+			<table>
+				<thead>
+					<tr>
+						<th>#</th> 
+						<th>이름</th>
+					</tr> 
+				</thead> 
+				<tbody>
+				<!--
+					Thymeleaf 반복 기능 => th:each
+					th:each가 적용된 요소를 컬렉션의 사이즈 만큼 반복되게된다.
+				-->
+					<tr th:each="member : ${members}">
+						<td th:text="${member.id}"></td> <!-- 해당 객체의 getter를 사용하여 값을 가져온다.--> 
+						<td th:text="${member.name}"></td>
+					</tr> 
+				</tbody>
+			</table> 
+		</div>
+	</div> <!-- /container --> 
+</body>
+</html>

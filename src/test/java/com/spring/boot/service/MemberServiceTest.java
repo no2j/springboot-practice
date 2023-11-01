@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 
 import com.spring.boot.domain.Member;
 import com.spring.boot.repository.MemoryMemberRepository;
-
+// 단위 테스트 방식
 class MemberServiceTest {
 	/*
 	 * 테스트 케이스 생성 방법
@@ -21,6 +21,7 @@ class MemberServiceTest {
 	MemberService memberService;
 	MemoryMemberRepository memberRepository;
 	
+	// Database연결 없이 사용했기 때문에 Before,AfterEach를 사용하였던 것.
 	@BeforeEach
 	public void beforeEach() {
 		memberRepository = new MemoryMemberRepository();
